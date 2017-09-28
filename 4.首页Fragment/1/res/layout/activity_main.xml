@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/layout_frag_activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_tabs_activity_main"></FrameLayout>
+
+    <RadioGroup
+        android:background="@drawable/bar_bg"
+        android:id="@+id/rg_tabs_activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:background="@drawable/bar_home_selector"
+            android:id="@+id/rb_home_activity_main"
+            style="@style/rb_tab"
+            />
+        <RadioButton
+            android:background="@drawable/bar_class_selector"
+            android:id="@+id/rb_class_activity_main"
+            style="@style/rb_tab"
+            />
+        <RadioButton
+            android:background="@drawable/bar_search_selector"
+            android:id="@+id/rb_search_activity_main"
+            style="@style/rb_tab"
+            />
+        <RadioButton
+            android:background="@drawable/bar_shopping_selector"
+            android:id="@+id/rb_shopcar_activity_main"
+            style="@style/rb_tab"
+            />
+        <RadioButton
+            android:background="@drawable/bar_more_selector"
+            android:id="@+id/rb_more_activity_main"
+            style="@style/rb_tab"
+            />
+
+    </RadioGroup>
+</RelativeLayout>
